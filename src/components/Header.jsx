@@ -25,7 +25,7 @@ const Header = () => (
       </a>
     </div>
 
-    <p className="mt-2">+91 80741 22800 | vangalapranitej@gmail.com</p>
+    <p className="mt-2">+91 80741 22800 • vangalapranitej@gmail.com</p>
     <p>Warangal, Telangana, India</p>
   </header>
 );
