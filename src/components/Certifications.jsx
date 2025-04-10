@@ -3,7 +3,7 @@ const Certifications = () => (
     <li>Summer of AI Internship - Swecha</li>
     <li>AWS Academy Cloud Foundations - AWS Academy</li>
     <li>Python 101 - IBM Cognitive Class</li>
-    <li>Full Stack MERN - Apex Software</li>
+    <li>Full Stack MERN - Apex Software Development & Training Centre</li>
   </ul>
 );
 
