@@ -13,21 +13,30 @@ const Resume = ({ darkMode, toggleDarkMode }) => {
   return (
     <div className="min-h-screen transition bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
       <div className="max-w-4xl mx-auto px-4 py-8 relative">
-        <div className="flex justify-end gap-4 mb-4">
+        <div className="flex justify-end gap-3 mb-4">
           <button
             onClick={toggleDarkMode}
-            className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+            title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+            className="group p-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-full shadow-md cursor-pointer transition-all duration-300 ease-out hover:shadow-lg hover:scale-110 hover:bg-gray-50 dark:hover:bg-gray-700 active:scale-95"
           >
-            {darkMode ? <FaSun /> : <FaMoon />}
+            <span className="block transition-transform duration-500 ease-out group-hover:rotate-[360deg]">
+              {darkMode ? (
+                <FaSun className="text-amber-400" />
+              ) : (
+                <FaMoon className="text-indigo-500" />
+              )}
+            </span>
           </button>
 
           <a
             href="/Vangala-Pranitej-Resume.pdf"
             download
             title="Download Resume"
-            className="p-2 bg-red-500 hover:bg-red-600 text-white rounded-full"
+            className="group p-3 bg-white dark:bg-gray-800 text-red-500 rounded-full shadow-md transition-all duration-300 ease-out hover:shadow-lg hover:scale-110 hover:bg-gray-50 dark:hover:bg-gray-700 active:scale-95"
           >
-            <FaFilePdf />
+            <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-0.5">
+              <FaFilePdf />
+            </span>
           </a>
         </div>
         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 sm:p-8">
