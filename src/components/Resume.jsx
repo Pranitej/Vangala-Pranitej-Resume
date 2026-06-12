@@ -11,8 +11,8 @@ import Certifications from "./Certifications";
 
 const Resume = ({ darkMode, toggleDarkMode }) => {
   return (
-    <div className="min-h-screen transition bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
-      <div className="max-w-4xl mx-auto px-4 py-8 relative">
+    <div className="min-h-screen transition bg-gray-200 dark:bg-gray-900">
+      <div className="max-w-[850px] mx-auto px-4 py-6">
         <div className="flex justify-end gap-3 mb-4">
           <button
             onClick={toggleDarkMode}
@@ -39,7 +39,9 @@ const Resume = ({ darkMode, toggleDarkMode }) => {
             </span>
           </a>
         </div>
-        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 sm:p-8">
+
+        {/* Paper sheet */}
+        <div className="bg-white dark:bg-gray-800 text-black dark:text-gray-100 shadow-xl px-6 py-8 sm:px-12 sm:py-10 text-[14px] leading-snug">
           <Header />
 
           <Section title="Professional Summary">

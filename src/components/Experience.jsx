@@ -1,15 +1,14 @@
 const Experience = () => (
   <div>
-    <div className="flex flex-col sm:flex-row sm:justify-between">
-      <p className="font-semibold">
-        Freelance Full Stack Developer | VM Software Solutions
+    <div className="flex flex-col sm:flex-row sm:justify-between sm:gap-4">
+      <p>
+        <span className="font-bold">Freelance Full Stack Developer</span> | VM
+        Software Solutions
       </p>
-      <p className="text-sm text-gray-600 dark:text-gray-300 sm:text-right sm:mt-0 mt-1">
-        Jan 2024 – Present
-      </p>
+      <p className="font-bold whitespace-nowrap">Jan 2024 – Present</p>
     </div>
 
-    <ul className="list-disc list-outside pl-5 mt-2 text-sm text-gray-800 dark:text-gray-300 space-y-1">
+    <ul className="list-disc list-outside pl-5 mt-1 space-y-0.5 leading-snug">
       <li>
         Delivered 3 production web applications end to end on the MERN stack,
         owning requirement scoping, development, deployment, and support.
