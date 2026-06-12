@@ -1,11 +1,13 @@
-import { FaMoon, FaSun, FaDownload } from "react-icons/fa";
+import { FaMoon, FaSun, FaFilePdf } from "react-icons/fa";
 
 import Header from "./Header";
 import Section from "./Section";
-import SkillsList from "./SkillsList";
-import Certifications from "./Certifications";
+import ProfessionalSummary from "./ProfessionalSummary";
+import Experience from "./Experience";
 import EducationEntry from "./EducationEntry";
+import SkillsList from "./SkillsList";
 import ProjectsSection from "./ProjectsSection";
+import Certifications from "./Certifications";
 
 const Resume = ({ darkMode, toggleDarkMode }) => {
   return (
@@ -22,19 +24,28 @@ const Resume = ({ darkMode, toggleDarkMode }) => {
           <a
             href="/Vangala-Pranitej-Resume.pdf"
             download
-            className="p-2 bg-green-500 hover:bg-green-600 text-white rounded-full"
+            title="Download Resume"
+            className="p-2 bg-red-500 hover:bg-red-600 text-white rounded-full"
           >
-            <FaDownload />
+            <FaFilePdf />
           </a>
         </div>
-        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6">
+        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 sm:p-8">
           <Header />
+
+          <Section title="Professional Summary">
+            <ProfessionalSummary />
+          </Section>
+
+          <Section title="Experience">
+            <Experience />
+          </Section>
 
           <Section title="Education">
             <EducationEntry />
           </Section>
 
-          <Section title="Skills">
+          <Section title="Technical Skills">
             <SkillsList />
           </Section>
 

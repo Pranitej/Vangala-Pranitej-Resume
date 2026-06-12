@@ -1,10 +1,28 @@
+const certifications = [
+  {
+    name: "Full Stack Development (MERN Stack)",
+    issuer: "Apex Software Development & Training Centre",
+  },
+  { name: "AWS Academy Cloud Foundations", issuer: "AWS Academy" },
+  { name: "Summer of AI Internship", issuer: "Swecha" },
+];
+
 const Certifications = () => (
-  <ul className="list-disc list-outside pl-5 mt-2 text-sm text-gray-800 dark:text-gray-300 space-y-1">
-    <li>Summer of AI Internship - Swecha</li>
-    <li>AWS Academy Cloud Foundations - AWS Academy</li>
-    <li>Python 101 - IBM Cognitive Class</li>
-    <li>Full Stack MERN - Apex Software Development & Training Centre</li>
-  </ul>
+  <div className="space-y-1 text-sm">
+    {certifications.map((cert, index) => (
+      <div
+        key={index}
+        className="flex flex-col sm:flex-row sm:justify-between"
+      >
+        <p className="font-medium text-gray-800 dark:text-gray-200">
+          {cert.name}
+        </p>
+        <p className="text-gray-600 dark:text-gray-400 sm:text-right">
+          {cert.issuer}
+        </p>
+      </div>
+    ))}
+  </div>
 );
 
 export default Certifications;

@@ -1,28 +1,47 @@
 const skills = [
-  { title: "Programming Languages", values: "C, Python, Java" },
-  { title: "Web Technologies", values: "HTML, CSS, JavaScript" },
+  { title: "Languages", values: "JavaScript (ES6+), Java, Python, SQL" },
   {
-    title: "Frontend Development",
-    values: "ReactJS, Vite, Bootstrap, Material-UI (MUI), Tailwind CSS",
+    title: "Frontend",
+    values:
+      "React.js, Next.js, Vite, Tailwind CSS, Redux, Zustand, shadcn/ui, Material-UI, HTML5, CSS3",
   },
   {
-    title: "Backend Development",
-    values: "ExpressJS, NodeJS, NextJS, SpringBoot",
+    title: "Backend",
+    values:
+      "Node.js, Express.js, RESTful API Design, Webhooks, Server-Side Rendering (SSR)",
   },
-  { title: "Databases", values: "MySQL, MongoDB, Oracle" },
-  { title: "Tools and Platforms", values: "Git, GitHub, AWS, Figma" },
-  { title: "Other Skills", values: "Machine Learning, REST APIs" },
+  {
+    title: "Databases & Caching",
+    values: "MongoDB, Mongoose, PostgreSQL, MySQL, Redis",
+  },
+  {
+    title: "DevOps & Cloud",
+    values:
+      "Docker, GitHub Actions (CI/CD), Linux, AWS, Cloudflare R2 (S3-compatible), Traefik, Dokploy",
+  },
+  {
+    title: "Security & Tools",
+    values:
+      "JWT, OAuth, RBAC, Helmet, Rate Limiting, Input Sanitization, Razorpay, Postman, Git, Figma",
+  },
+  {
+    title: "Architecture",
+    values:
+      "Multi-Tenant SaaS, API Security, Caching Strategies, Payment Gateway Integration",
+  },
 ];
 
 const SkillsList = () => (
-  <div className="space-y-2 text-sm">
+  <ul className="list-disc list-outside pl-5 space-y-1 text-sm">
     {skills.map((skill, index) => (
-      <div key={index} className="flex flex-col sm:flex-row">
-        <span className="font-medium sm:w-56">{skill.title}</span>
-        <span className="text-gray-700 dark:text-gray-300">{skill.values}</span>
-      </div>
+      <li key={index}>
+        <span className="font-semibold">{skill.title}:</span>{" "}
+        <span className="text-gray-700 dark:text-gray-300">
+          {skill.values}
+        </span>
+      </li>
     ))}
-  </div>
+  </ul>
 );
 
 export default SkillsList;
