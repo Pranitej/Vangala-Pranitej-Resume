@@ -1,5 +1,5 @@
 const ProfessionalSummary = () => (
-  <p className="text-sm text-gray-800 dark:text-gray-300 leading-relaxed">
+  <p className="leading-snug">
     Full Stack Developer specializing in the MERN stack. Shipped three
     production multi-tenant SaaS platforms across food delivery, invoicing,
     and online examinations. Built 170+ REST endpoints secured with JWT,

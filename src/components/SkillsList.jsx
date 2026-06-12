@@ -32,13 +32,10 @@ const skills = [
 ];
 
 const SkillsList = () => (
-  <ul className="list-disc list-outside pl-5 space-y-1 text-sm">
+  <ul className="list-disc list-outside pl-5 space-y-0.5 leading-snug">
     {skills.map((skill, index) => (
       <li key={index}>
-        <span className="font-semibold">{skill.title}:</span>{" "}
-        <span className="text-gray-700 dark:text-gray-300">
-          {skill.values}
-        </span>
+        <span className="font-bold">{skill.title}:</span> {skill.values}
       </li>
     ))}
   </ul>
