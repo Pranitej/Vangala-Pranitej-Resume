@@ -10,15 +10,15 @@ const Header = () => (
 
     <p className="mt-1 text-[13.5px] flex flex-wrap justify-center items-center gap-x-1.5 gap-y-0.5">
       <span>Warangal, Telangana, India</span>
-      <span>|</span>
+      <span className="hidden sm:inline">|</span>
       <a href="tel:+918074122800" className={linkClass}>
         +91 80741 22800
       </a>
-      <span>|</span>
+      <span className="hidden sm:inline">|</span>
       <a href="mailto:vangalapranitej@gmail.com" className={linkClass}>
         vangalapranitej@gmail.com
       </a>
-      <span>|</span>
+      <span className="hidden sm:inline">|</span>
       <a
         href="https://www.linkedin.com/in/vangala-pranitej"
         target="_blank"
@@ -27,7 +27,7 @@ const Header = () => (
       >
         linkedin.com/in/vangala-pranitej
       </a>
-      <span>|</span>
+      <span className="hidden sm:inline">|</span>
       <a
         href="https://github.com/Pranitej"
         target="_blank"
