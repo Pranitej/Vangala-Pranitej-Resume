@@ -1,32 +1,44 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Header = () => (
   <header className="text-center mb-6">
-    <h1 className="text-4xl font-bold">Vangala Pranitej</h1>
+    <h1 className="text-3xl sm:text-4xl font-bold tracking-wide uppercase">
+      Vangala Pranitej
+    </h1>
+    <p className="mt-1 text-lg font-medium text-gray-700 dark:text-gray-300">
+      Full Stack Developer (MERN)
+    </p>
 
-    <div className="flex justify-center gap-6 mt-3">
+    <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1 mt-3 text-sm text-gray-700 dark:text-gray-300">
+      <span className="inline-flex items-center gap-1">
+        <FaMapMarkerAlt size={13} /> Warangal, Telangana, India
+      </span>
+      <span className="inline-flex items-center gap-1">
+        <FaPhoneAlt size={13} /> +91 80741 22800
+      </span>
+      <a
+        href="mailto:vangalapranitej@gmail.com"
+        className="inline-flex items-center gap-1 hover:underline"
+      >
+        <FaEnvelope size={13} /> vangalapranitej@gmail.com
+      </a>
       <a
         href="https://www.linkedin.com/in/vangala-pranitej"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 text-gray-800 dark:text-gray-200 hover:underline"
+        className="inline-flex items-center gap-1 hover:underline"
       >
-        <FaLinkedin size={20} />
-        <span>LinkedIn</span>
+        <FaLinkedin size={13} /> linkedin.com/in/vangala-pranitej
       </a>
       <a
         href="https://github.com/Pranitej"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 text-gray-800 dark:text-gray-200 hover:underline"
+        className="inline-flex items-center gap-1 hover:underline"
       >
-        <FaGithub size={20} />
-        <span>GitHub</span>
+        <FaGithub size={13} /> github.com/Pranitej
       </a>
     </div>
-
-    <p className="mt-2">+91 80741 22800 • vangalapranitej@gmail.com</p>
-    <p>Warangal, Telangana, India</p>
   </header>
 );
 
