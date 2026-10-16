@@ -1,3 +1,5 @@
+import BulletList from "./BulletList";
+
 const skills = [
   { title: "Languages", values: "JavaScript (ES6+), Java, Python, SQL" },
   {
@@ -32,13 +34,13 @@ const skills = [
 ];
 
 const SkillsList = () => (
-  <ul className="list-disc list-outside pl-5 space-y-0.5 leading-snug">
-    {skills.map((skill, index) => (
-      <li key={index}>
+  <BulletList
+    items={skills.map((skill) => (
+      <>
         <span className="font-bold">{skill.title}:</span> {skill.values}
-      </li>
+      </>
     ))}
-  </ul>
+  />
 );
 
 export default SkillsList;

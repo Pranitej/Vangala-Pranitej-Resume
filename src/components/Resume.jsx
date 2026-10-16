@@ -12,7 +12,7 @@ import Certifications from "./Certifications";
 const Resume = ({ darkMode, toggleDarkMode }) => {
   return (
     <div className="min-h-screen transition bg-gray-200 dark:bg-gray-900">
-      <div className="max-w-[850px] mx-auto px-4 py-6">
+      <div className="max-w-[calc(210mm_+_2rem)] mx-auto px-4 py-6">
         <div className="flex justify-end gap-3 mb-4">
           <button
             onClick={toggleDarkMode}
@@ -40,8 +40,9 @@ const Resume = ({ darkMode, toggleDarkMode }) => {
           </a>
         </div>
 
-        {/* Paper sheet */}
-        <div className="bg-white dark:bg-gray-800 text-black dark:text-gray-100 shadow-xl px-6 py-8 sm:px-12 sm:py-10 text-[14px] leading-snug">
+        {/* Paper sheet: A4 with the PDF's 0.5in margins, Carlito 10pt at
+            single line spacing, kerning off to match the PDF's glyph widths */}
+        <div className="bg-white dark:bg-gray-800 text-black dark:text-gray-100 shadow-xl px-6 py-8 sm:px-[0.5in] sm:pt-[39.01px] sm:pb-[0.5in] sm:min-h-[297mm] text-[10pt] leading-[1.22] [font-kerning:none]">
           <Header />
 
           <Section title="Professional Summary">

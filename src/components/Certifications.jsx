@@ -8,11 +8,11 @@ const certifications = [
 ];
 
 const Certifications = () => (
-  <div className="space-y-0.5">
+  <div className="space-y-[1.33px]">
     {certifications.map((cert, index) => (
       <div
         key={index}
-        className="flex flex-col sm:flex-row sm:justify-between sm:gap-4"
+        className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline sm:gap-4"
       >
         <p className="font-bold">{cert.name}</p>
         <p className="sm:text-right">{cert.issuer}</p>
