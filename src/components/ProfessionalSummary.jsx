@@ -1,11 +1,10 @@
 const ProfessionalSummary = () => (
-  <p className="leading-snug">
-    Full Stack Developer specializing in the MERN stack. Shipped three
-    production multi-tenant SaaS platforms across food delivery, invoicing,
-    and online examinations. Built 170+ REST endpoints secured with JWT,
-    RBAC, and Razorpay payment integration. Reduced API latency by up to 75%
-    with Redis caching and deployed every platform through Docker, CI/CD, and
-    VPS infrastructure.
+  <p>
+    Software Engineer specializing in the MERN stack. Shipped 3 production
+    multi-tenant SaaS platforms for online examinations, invoicing, and food
+    delivery. Built 375+ REST endpoints secured with JWT, RBAC, and Razorpay
+    payment integration. Achieved&nbsp;~80% lower API latency with Redis caching
+    and deployed every platform via Docker, CI/CD, and VPS infrastructure.
   </p>
 );
 

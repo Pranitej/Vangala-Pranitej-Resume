@@ -32,4 +32,12 @@
 
 @theme {
   --font-sans: "Carlito", Calibri, "Segoe UI", Arial, sans-serif;
+
+  /* Wide enough for the full A4 sheet (210mm + gutters + scrollbar). */
+  --breakpoint-a4: 53rem;
+
+  /* Colours taken from the resume PDF. */
+  --color-link: #1155cc;
+  --color-rule: #444444;
+  --color-tech: #333333;
 }
